@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSICO AIRWAYS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="loader"></div>
+
+    <!-- header start  -->
+    <section class="page">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">WEBSICO AIRWAYS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active hover-underline" aria-current="page" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-start d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Book
+                            </a>
+                            <ul class="dropdown-menu mega-menu  centered-dropdown border-0"
+                                aria-labelledby="navbarDropdown" style="background-color: #fff; color: #1AA3F7;">
+                                <div class="container">
+                                    <div class="col-12 text-end">
+                                        <button type="button" class="btn-close" aria-label="Close"
+                                            data-bs-dismiss="dropdown"></button>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <div class="col-3">
+                                            <h5>Plan your trip</h5>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <img class=""
+                                                        src="https://www.qatarairways.com/content/dam/images/custom/mdd/mobile-icons/Hotels.svg"
+                                                        alt="" width="24px" height="24px">
+                                                    <a href="#">Hotels</a>
+                                                </li>
+                                                <li>
+                                                    <img class=""
+                                                        src="https://www.qatarairways.com/content/dam/images/custom/mdd/mobile-icons/Car.svg"
+                                                        alt="" width="24px" height="24px">
+                                                    <a href="#">Car Rentals</a>
+                                                </li>
+                                                <li>
+                                                    <img class=""
+                                                        src="https://www.qatarairways.com/content/dam/images/custom/mdd/mobile-icons/meet_greet.svg"
+                                                        alt="" width="24px" height="24px">
+                                                    <a href="#">Meet and Great</a>
+                                                </li>
+                                                <li>
+                                                    <img class=""
+                                                        src="https://www.qatarairways.com/content/dam/images/custom/mdd/mobile-icons/travel.svg"
+                                                        alt="" width="24px" height="24px">
+                                                    <a href="#">Travel Insurance</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+                                            <h5>Travel Information</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Travel requirement</a></li>
+                                                <li><a href="#">Our Partners</a></li>
+                                                <li><a href="#">One world</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5>Group and Buisness Travels</h5>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://www.qatarairways.com/content/dam/images/renditions/vertical/brand/aircraft/v-beyond-business-corporate-building.jpg"
+                                                        alt="" style="height: 150px; width: 100px;">
+                                                </div>
+                                                <div class="col-8">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Beyound Business</a></li>
+                                                        <li><a href="#">Meetings and events</a></li>
+                                                        <li><a href="#">Corporate Travels</a></li>
+                                                        <li><a href="#">Group Travels</a></li>
+                                                        <li><a href="#">Sports Travels</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="https://www.qatarairways.com/content/dam/images/mobile/miscellaneous/beach/m-maldives-beach.jpg"
+                                                alt="" style="width: 180px; height: 190px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline" href="#">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="google_translate_element"></div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline" href="#">Help</a>
+                        </li>
+                        <li class="nav-item gay-hover">
+                            <button type="button" class="nav-link btn active border-0" data-bs-toggle="modal"
+                                data-bs-target="#loginModal"><span><i class="fa-regular fa-user"
+                                        style="color: #fff;"></i></span> Login / Sign
+                                Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class=" mt-sm-5 ms-5 text-white">
+            <h1 id="Sulaimon"></h1>
+            <h1> Save up to 25%*</h1>
+            <p class="heroimage-subtitle h6"> Summer adventures await </p>
+            <a href="#" class="btn btn-lg text-light border rounded-pill kool mt-5" style="text-decoration: none;">Book
+                now</a>
+        </div>
+        <!-- Bootstrap Modal for Login and Sign Up -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Login form -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" name="username"
+                                    placeholder="Enter username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="Enter password">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <button type="submit" class="btn text-light"
+                                style="background-color: #8E2157;">Login</button>
+                        </form>
+                    </div>
+
+                    <!-- Sign-up form -->
+                    <div class="modal-body">
+                        <form id="signupForm" style="display: none;">
+                            <div class="mb-3">
+                                <label for="signupUsername" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="signupUsername" name="signupUsername"
+                                    placeholder="Enter username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signupPassword" name="signupPassword"
+                                    placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn text-light" style="background-color: #8E2157;">Sign
+                                Up</button>
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer justify-content-center">
+                        <p>Or Sign in with</p>
+                        <a style="text-decoration: none; color: #000;"
+                            href="https://accounts.google.com/v3/signin/identifier?ifkv=AS5LTAQM_8s84Xb_scdCPStxkwqKciFKrdI1lZ0s9lueQq1HzJPxAW945Hwwa59t_Z_JiWppBgS5Gw&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1509929219%3A1719592606507979&ddm=0">
+                            <i class="fa-brands fa-google fa-lg" style="color: #511f50;"></i>
+                        </a>
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                        <button type="button" class="btn text-light" id="switchToSignUp"
+                            style="background-color: #8E2157;">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- header ends -->
+
+    <section class="age">
+        <div class="container bg-light pb-4" style="margin-top: -40px;">
+            <ul class="nav nav-tabs" style="background-color: #F2F3FA; text-align: center; justify-content: center;"
+                id="myTab" role="tablist"
+                style="justify-content: center; text-align: center; justify-content: center; align-items: center;">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" style="color: #8E2157;" id="home-tab" data-bs-toggle="tab"
+                        data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><span
+                            style="padding-right: 10px;"><i class="fa-solid fa-jet-fighter "
+                                style="color: #8E2157;"></i></span>Book a Flight</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" style="color: #8E2157;" id="profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                        aria-selected="false"><span style="padding-right: 10px;"><i class="fa-solid fa-location-pin"
+                                style="color: #8E2157;"></i></span>Qatar stopover</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" style="color: #8E2157;" id="contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                        aria-selected="false"><span style="padding-right: 10px;"><i class="fa-regular fa-calendar-days"
+                                style="color: #8E2157;"></i></span> Manage / Check in</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form action="/action_page.php" style="display: flex; gap: 15px; margin-top: 12px;">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="check1" name="option" value="return"
+                                onclick="toggleFlightOptions('return')" checked>
+                            <label class="form-check-label" for="check1">Return</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="check2" name="option" value="one-way"
+                                onclick="toggleFlightOptions('one-way')">
+                            <label class="form-check-label" for="check2">One way</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="check3" name="option" value="multi-city"
+                                onclick="toggleFlightOptions('multi-city')">
+                            <label class="form-check-label" for="check3">Multi-city</label>
+                        </div>
+                    </form>
+
+                    <div id="return-flight" class="input-group mb-3">
+                        <span class="input-group-text">Return-</span>
+                        <span class="input-group-text">From - To ?</span>
+                        <input type="date" class="input-group-text">
+                        <input type="date" class="input-group-text">
+                        <input type="text" class="form-control">
+                        <span>
+                            <form action="/action_page.php">
+                                <div class="form-floating">
+                                    <select class="form-select" id="sel1" name="sellist">
+                                        <option>Economy</option>
+                                        <option>Premium(Buisness/First)</option>
+                                    </select>
+                                    <label for="sel1" class="form-label"></label>
+                                </div>
+                            </form>
+                        </span>
+                    </div>
+                    <div id="one-way-flight" class="input-group mb-3">
+                        <span class="input-group-text">One way -</span>
+                        <span class="input-group-text">From</span>
+                        <input type="date" class="input-group-text">
+                        <input type="text" class="form-control">
+                        <span>
+                            <form action="/action_page.php">
+                                <div class="form-floating">
+                                    <select class="form-select" id="sel1" name="sellist">
+                                        <option>Economy</option>
+                                        <option>Premium(Buisness/First)</option>
+                                    </select>
+                                    <label for="sel1" class="form-label"></label>
+                                </div>
+                            </form>
+                        </span>
+                    </div>
+                    <div id="multi-city-flight" class="input-group mb-3">
+                        <span class="input-group-text">Multi-city_</span>
+                        <span class="input-group-text">From - To</span>
+                        <input type="date" class="input-group-text">
+                        <input type="text" class="form-control">
+                        <span>
+                            <form action="/action_page.php">
+                                <div class="form-floating">
+                                    <select class="form-select" id="sel1" name="sellist">
+                                        <option>Economy</option>
+                                        <option>Premium(Buisness/First)</option>
+                                    </select>
+                                    <label for="sel1" class="form-label"></label>
+                                </div>
+                            </form>
+                        </span>
+                    </div>
+                    <div style="display: flex; justify-content: end;">
+                        <!-- <button class="btn btn-lg rounded-pill p-3"
+                            style="background-color: #8E2157; color: #fff; justify-content: end;">Search Flight</button> -->
+                        <button class="btn btn-lg rounded-pill p-3"
+                            style="background-color: #8E2157; color: #fff; justify-content: end;"
+                            onclick="bookFlight()">Search Flight</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <form action="/action_page.php" style="display: flex; gap: 15px; margin-top: 12px;">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="check1" name="option" value="return"
+                                checked>
+                            <label class="form-check-label" for="check1">Return</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="check2" name="option" value="one-way">
+                            <label class="form-check-label" for="check2">One way</label>
+                        </div>
+                    </form>
+
+                    <p>Explore Websico during your journey with amazing stopover packages starting from USD 14 pp at
+                        4-star and 5-star hotels.</p>
+                    <div class="container border p-2">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="category-item">From</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="category-item">To</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="category-item">
+                                            <span style="font-size: 0.9rem; color: #6A6D70;">Departure</span><br>
+                                            06-Jun-2024
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="category-item">
+                                            <span style="font-size: 0.9rem; color: #6A6D70;">Return</span><br>
+                                            01-Jul-2024
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="category-item">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="category-item">
+                                                <span
+                                                    style="font-size: 0.9rem; color: #6A6D70;">Passenger/Room</span><br>
+                                                2passenger,1room
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span style="font-size: 0.9rem; color: #6A6D70;">Class</span>
+                                            <select class="form-select">
+                                                <option value="1">Economy</option>
+                                                <option value="2">Buisness</option>
+                                                <option value="3">First</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mt-3 bold d-flex gap-3 justify-content-end mb-5">
+                                <input type="text" class="form-control" style="width: 200px;"
+                                    placeholder="Enter your promo code...">
+                                <button class="btn btn-lg  rounded-pill p-3"
+                                    style="background-color: #8E2157; color: #FFFFFF; font-size: 0.8rem;">Search
+                                    Flight</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>When would you like to add a stop in Doha during your journey?</p>
+                            <form action="/action_page.php" style="display: flex; gap: 15px; margin-top: 12px;">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="check1" name="option"
+                                        value="return" checked>
+                                    <label class="form-check-label" for="check1">Departure</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="check2" name="option"
+                                        value="one-way">
+                                    <label class="form-check-label" for="check2">Return</label>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>How many days would you like to stay in Qatar?</p>
+                            <div class="counter">
+                                <button id="minus" class="btn btn-lg border">-</button>
+                                <span id="count" class="mx-3">0</span>
+                                <button id="plus" class="btn btn-lg border">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                    <div class="container">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" style="color: #8E2157;" id="tab1-tab" data-bs-toggle="tab"
+                                    href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Manage Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab2-tab" style="color: #8E2157;" data-bs-toggle="tab"
+                                    href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Check in</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="inputField1"
+                                                    placeholder=" ">
+                                                <label for="inputField1">Booking Reference</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="inputField2"
+                                                    placeholder=" ">
+                                                <label for="inputField2">Last name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button class="btn btn-lg rounded-pill text-light"
+                                                style="background-color: #8E2157; width: 200px; "><span
+                                                    style="font-size: 1rem;">Retrieve
+                                                    booking</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="inputField1"
+                                                    placeholder=" ">
+                                                <label for="inputField1">Booking Reference</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="inputField2"
+                                                    placeholder=" ">
+                                                <label for="inputField2">Last name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button class="btn btn-lg rounded-pill text-light"
+                                                style="background-color: #8E2157; width: 200px; "><span
+                                                    style="font-size: 1rem;">Check
+                                                    in</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="close mt-5 d-none d-lg-block">
+        <div class="container">
+            <h1 style="color: #1F212B; font-weight: 100;">Start planning your next trip</h1>
+            <p>Thinking of travelling somewhere soon? Here are some options to help you get started.</p>
+            <div class="rowed">
+                <div class="">
+                    <div class="card  rounded bg-light mt-3 border-0 drac" style="width: 14rem; height: 8cm;">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-2/campaigns/global/experience-qatar/h2-experience-qatar-family.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-weight: 100;">An unforgettable holiday in Websico</h4>
+                            <hr>
+                            <div style="font-size: 1.2rem;">
+                                <a href="#" class="text-dark" style="text-decoration: none;">Book now <span
+                                        style="padding-left: 2cm;"><i class="fa-solid fa-angle-right"
+                                            style="color: #010409;"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowe">
+                    <div class="card bg-light mt-3 border-0 drac" style="width: 14rem; height: 8cm;">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-2/destinations/maldives/maldives/h2-maldives-beach-sunrise.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-weight: 100;">Your perfect holiday awaits</h4>
+                            <hr>
+                            <div style="font-size: 1.2rem;">
+                                <a href="#" class="text-dark" style="text-decoration: none;">Book a package<span
+                                        style="padding-left: 1cm;"><i class="fa-solid fa-angle-right"
+                                            style="color: #010409;"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="rowe">
+                    <div class="card bg-light mt-3 border-0 drac" style="width: 14rem; height: 8cm;">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-3/brand/aircraft/a350/h3-a350-1000-doha2.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-weight: 100;">Travel requirement</h4>
+                            <hr>
+                            <div style="font-size: 1.2rem;">
+                                <a href="#" class="text-dark" style="text-decoration: none;">Find out more<span
+                                        style="padding-left: 1.5cm;"><i class="fa-solid fa-angle-right"
+                                            style="color: #010409;"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowe">
+                    <div class="card bg-light mt-3 border-0 drac" style="width: 14rem; height: 8cm;">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-3/brand/qsuite/h3-qsuite-ife-dine.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: 100;">Elevate your experience</h5>
+                            <hr>
+                            <div style="font-size: 1.2rem;">
+                                <a href="#" class="text-dark" style="text-decoration: none;">Purchase add-ons</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="close mt-5 d-block d-lg-none">
+        <div class="container">
+            <h1 style="color: #1F212B; font-weight: 100;">Start planning your next trip</h1>
+            <p>Thinking of travelling somewhere soon? Here are some options to help you get started.</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card  bg-light mt-3 border-0 drac" style="width: 100%; height: 20rem;">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-2/campaigns/global/experience-qatar/h2-experience-qatar-family.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: 100;">An unforgettable holiday in Websico</h3>
+                            <hr>
+                            <div style="font-size: 1.4rem;" class="gee">
+                                <a href="#" class="text-dark" style="text-decoration: none;">Book now <span
+                                        style="padding-left: 2.4cm;"><i class="fa-solid fa-angle-right right"
+                                            style="color: #010409;"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-light mt-3 border-0 drac" style="width: 100%; height: 20rem;">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-2/destinations/maldives/maldives/h2-maldives-beach-sunrise.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: 100;">Your perfect holiday awaits</h3>
+                            <hr>
+                            <div style="font-size: 1.4rem;" class="gee">
+                                <a href="#" class="text-dark" style="text-decoration: none;">Book a package<span
+                                        style="padding-left: 1cm;"><i class="fa-solid fa-angle-right right"
+                                            style="color: #010409;"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-light mt-3 border-0 drac" style="width: 100%; height: 25rem;">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-3/brand/aircraft/a350/h3-a350-1000-doha2.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: 100;">Travel requirement</h3>
+                            <hr>
+                            <div style="font-size: 1.4rem;" class="gee">
+                                <a href="#" class="text-dark" style="text-decoration: none;">Find out more<span
+                                        style="padding-left: 1.5cm;"><i class="fa-solid fa-angle-right right"
+                                            style="color: #010409;"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card bg-light mt-3 border-0 drac" style="width: 100%; height: 25rem;">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-3/brand/qsuite/h3-qsuite-ife-dine.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-weight: 100;">Elevate your experience</h3>
+                            <hr>
+                            <div style="font-size: 1.4rem;" class="gee">
+                                <a href="#" class="text-dark" style="text-decoration: none;">Purchase add-ons</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-5 overflow-hidden luck" id="luck">
+        <div class="container">
+            <h1 style="font-weight: 100;">Find great fares</h1>
+            <!-- <h6 class="d-flex mt-4">From <span class="border-left-0 border-right-0 d-flex align-items-end" style="padding-left: 8px;"><input type="text" class="w-100 border-0 border-bottom border-dark"></span><span><i class="fa-solid fa-pen" style="color: #0a0a0a;"></i></span></h6> -->
+
+
+
+            <div class="container mt-4">
+                <div class="form-group position-relative d-flex gap-3 ">
+                    <label for="countryInput">From</label>
+                    <div class="input-group">
+                        <input type="text" id="countryInput" placeholder="Type to search..." style="width: 50%;">
+                        <div id="countryList" class="suggestions-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" style="justify-content: space-between">
+                <div class="col-lg-4 col-md-12">
+                    <div class="image-container">
+                        <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-2/destinations/united-kingdom/london/h2-gatwick-phone.jpg/jcr:content/renditions/rendition.733.425.jpg"
+                            alt="London Heathrow" style="height: 360px;">
+                        <div class="image-overlay"></div>
+                        <div class="image-info text-light" style="font-weight: 500;">
+                            <h3>London Heathrow</h3>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>25 Jul 2024 - 1 Oct 2024</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-end">Economy from NGH 1542107</p>
+                                </div>
+                            </div>
+                            <button class="text-light" style="width: 100%;">Book now</button><br>
+                            <a href="#" class="text-light"
+                                style="text-decoration: underline; cursor: pointer; margin: 50%;">Discover</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="imaged">
+                                <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/china/guangzhou/s-guangzhou-outdoor.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                                    alt="London Heathrow">
+                                <div class="image-overlay"></div>
+                                <div class="image-info text-light text-center">
+                                    <h4>Guangzhou Heathrow</h4>
+                                    <p>1 Jul 2024 - 21 Oct 2024</p>
+                                    <p>Economy from NGN 1359163</p>
+                                    <button class="text-light w-100">Book now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="imaged">
+                                <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/united-states/new-york/s-new-york-city4.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                                    alt="London Heathrow">
+                                <div class="image-overlay"></div>
+                                <div class="image-info text-light text-center">
+                                    <h4>New York</h4>
+                                    <p>8 Sept 2024 - 11 Nov 2024</p>
+                                    <p>Economy from NGN 1540748</p>
+                                    <button class="text-light w-100">Book now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="imaged">
+                                    <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/philippines/manila/s-manila.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                                        alt="London Heathrow">
+                                    <div class="image-overlay"></div>
+                                    <div class="image-info text-light text-center">
+                                        <h4>Manila(MNL)</h4>
+                                        <p>1 OCT 2024 - 21 Oct 2024</p>
+                                        <p>Economy from NGN 3615772</p>
+                                        <button class="text-light w-100">Book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imaged">
+                                    <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/united-states/dallas/s-dallas-city.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                                        alt="London Heathrow">
+                                    <div class="image-overlay"></div>
+                                    <div class="image-info text-light text-center">
+                                        <h4>Dallas</h4>
+                                        <p>18 Sept 2024 - 19 Nov 2024</p>
+                                        <p>Economy from NGN 1958956</p>
+                                        <button class="text-light w-100">Book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="image-container">
+                            <img src="https://www.southernliving.com/thmb/2xIANjcN_LmnK5EDBedskp4XjOg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-546439338-72d28676e5704c439802ab6f971c4b3c.jpg"
+                                alt="London Heathrow" style="height: 365px;">
+                            <div class="image-overlay"></div>
+                            <div class="image-info text-light" style="font-weight: 500;">
+                                <h3>Washington, D.C.</h3>
+                                <div class="row">
+                                    <div class="col-6 ">
+                                        <p>25 Dec 2024 - 1 jan 2025</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-end">Economy from NGH 1911485</p>
+                                    </div>
+                                </div>
+                                <button class="text-light" style="width: 100%;">Book now</button><br>
+                                <a href="#" class="text-light"
+                                    style="text-decoration: underline; cursor: pointer; margin: 50%;">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="image-container">
+                            <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-2/destinations/qatar/doha/h2-mia-doha.jpg/jcr:content/renditions/rendition.733.425.jpg"
+                                alt="London Heathrow" style="height: 365px;">
+                            <div class="image-overlay"></div>
+                            <div class="image-info text-light" style="font-weight: 500;">
+                                <h3>Doha</h3>
+                                <div class="row">
+                                    <div class="col-6 ">
+                                        <p>17 jan 2025 - 31 jan 2025</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-end">Economy from NGH 1803369</p>
+                                    </div>
+                                </div>
+                                <button class="text-light" style="width: 100%;">Book now</button><br>
+                                <a href="#" class="text-light"
+                                    style="text-decoration: underline; cursor: pointer; margin: 50%;">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="imaged">
+                                    <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/france/paris-/s-paris.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                                        alt="London Heathrow">
+                                    <div class="image-overlay"></div>
+                                    <div class="image-info text-light text-center">
+                                        <h4>Paris</h4>
+                                        <p>1 OCT 2024 - 21 Oct 2024</p>
+                                        <p>Economy from NGN 1474033</p>
+                                        <button class="text-light w-100">Book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imaged">
+                                    <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/saudi-arabia/jeddah/s-jeddah-coastal-masjid.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                                        alt="London Heathrow">
+                                    <div class="image-overlay"></div>
+                                    <div class="image-info text-light text-center">
+                                        <h4>Jeddha</h4>
+                                        <p>18 Aug 2024 - 19 Nov 2024</p>
+                                        <p>Economy from NGN 1245518</p>
+                                        <button class="text-light w-100">Book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="love">
+
+        <ul class="nav nav-pills mb-3 justify-content-center mt-5" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link lot active underline text-dark" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true">Privilege Club</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link lot underline text-dark" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">Mobile App</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link lot underline text-dark" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">New Baggage Allowance</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link lot underline text-dark" id="pills-life-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-life" type="button" role="tab" aria-controls="pills-life"
+                    aria-selected="false">Qsuite</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="local p-5">
+                    <div class="her p-3">
+                        <h1 class="hj">Join Privilege Club</h1>
+                        <p>Earn Avios and use them towards shopping at Qatar Duty Free, Flight, upgrades, extra baggage,
+                            and more exclusive benefits</p>
+                        <button class="nuh hy">Join now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="local1">
+                    <div class="her1 p-3">
+                        <h1 class="hj">Get more about our mobile app</h1>
+                        <p>Benefit from app-exclusive offers, personalized notification, seamless booking functions,
+                            journey tracking and more</p>
+                        <button class="nuh hy">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="local2">
+                    <div class="her3 p-3">
+                        <h1 class="hj">New Baggages Allowance</h1>
+                        <p>To better suit your travel needs, we are pleased to offer you our new baggage allowance when
+                            you fly from any African destination.</p>
+                        <button class="nuh hy">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-life" role="tabpanel" aria-labelledby="pills-file-tab">
+                <div class="local3">
+                    <div class="her1 p-3">
+                        <h1 class="hj">New Baggages Allowance</h1>
+                        <p>To better suit your travel needs, we are pleased to offer you our new baggage allowance when
+                            you fly from any African destination.</p>
+                        <button class="nuh hy">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="den mx-5 mt-5 hok d-none d-md-none d-lg-block">
+        <div class="container cod">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="ned col-md-6 mt-5">
+                    <h1 class="text-light">Never miss an offer</h1>
+                    <p class="text-light">Subscribe and be the first to receive our exclusive offers.</p>
+                    <input class="jui" type="email" placeholder="Email address">
+                    <input class="jui" type="text" placeholder="Preferred city of departure"><br>
+                    <div style="display: flex; gap: 20px;">
+                        <input type="checkbox" class="ju" id="olad">
+                        <label for="olad" class="yeah">I would like to get offers and news from Qatar Airways. I have
+                            read and understood the <a href=""> privacy notice.</a></label>
+                    </div>
+                    <button class="nih hy">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="den mx-5 mt-5 hok d-none d-md-block d-lg-none">
+        <div class="container cod">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="ned col-md-6 mt-5">
+                    <h1 class="text-light">Never miss an offer</h1>
+                    <p class="text-light">Subscribe and be the first to receive our exclusive offers.</p>
+                    <input class="jui" type="email" placeholder="Email address">
+                    <!-- <input class="jui" type="text" placeholder="Preferred city of departure"><br> -->
+                    <div style="display: flex; gap: 20px;">
+                        <input type="checkbox" class="ju" id="olad">
+                        <label for="olad" class="yeah" style="font-size: 0.7rem;">I would like to get offers and news
+                            from Qatar Airways. I have
+                            read and understood the <a href=""> privacy notice.</a></label>
+                    </div>
+                    <button class="nih hy">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="den mx-4 mt-5 d-block d-md-none">
+        <div class="container cod">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="ned col-md-6 mt-5">
+                    <h1 class="text-light" style="font-size: 1.2rem;">Never miss an offer</h1>
+                    <p class="text-light">Subscribe and be the first to receive our exclusive offers.</p>
+                    <input class="jur" type="email" placeholder="Email address"><br>
+                    <div style="display: flex; gap: 20px;">
+                        <input type="checkbox" class="ju" id="olad">
+                        <label for="olad" class="yea">I would like to get offers and news from Qatar Airways. I have
+                            read and understood the <a href=""> privacy notice.</a></label>
+                    </div>
+                    <button class="nh hy">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-light mt-5 p-5 d-none d-md-block">
+        <div class="row">
+            <div class="col-lg-2 col-md-3">
+                <p>Websico Airways</p>
+                <ul>
+                    <li>About us</li>
+                    <li>Careers</li>
+                    <li>Press releases</li>
+                    <li>Sponsorship</li>
+                    <li> Qatarisation</li>
+                    <li>Annual reports</li>
+                    <li>Environmental</li>
+                    <li>Sustainablilty</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3">
+                <p>Group Companies</p>
+                <ul>
+                    <li>Hamad international</li>
+                    <li>Airport</li>
+                    <li>Websico Executive</li>
+                    <li>Websico Duty Free</li>
+                    <li>Websico Airways Cargo</li>
+                    <li>Internal Media Service</li>
+                    <li>Design Organization</li>
+                    <li>Group Companies</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3">
+                <p>Buisness solution</p>
+                <ul>
+                    <li>Corporate Travel</li>
+                    <li>Beyound Buisness</li>
+                    <li>QMICE Meetings and Event</li>
+                    <li>Advertise with us</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3">
+                <p>Buisness Partners</p>
+                <ul>
+                    <li>Affiliate marketing</li>
+                    <li>e-procurement and Supplier Registration</li>
+                    <li>Trade Partners</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 d-md-none d-lg-block d-none">
+                <p>Help</p>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Browse FAQs</li>
+                    <li>Travel Alert</li>
+                </ul>
+            </div>
+            <div class="col-lg-2">
+                <img src="https://www.qatarairways.com/content/dam/images/custom/mdd/footer-iocns/Theqa_logo_SVG.svg"
+                    alt="">
+                <div>
+                    <h5 class="for">Lets stay connected</h5>
+                    <a href="https://www.facebook.com/websicoairways"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/money_ola60708"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/ola-money-892714301/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@OlaMoney-x7s"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/olamoney402/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-3 hoj">
+                <img src="https://www.qatarairways.com/content/dam/images/renditions/square/logos/awards/s-skytrax-2024-aoty-logo.svg"
+                    alt="" style="width: 80px;">
+                <p class="bolk">World’s Best Airline</p>
+            </div>
+            <div class="col-3 hoj">
+                <img src="https://www.qatarairways.com/content/dam/images/renditions/square/logos/awards/s-skytrax-2024-log.svg"
+                    alt="" style="width: 80px;">
+                <p class="bolk">World's Best Business Class</p>
+            </div>
+            <div class="col-3 hoj">
+                <img src="https://www.qatarairways.com/content/dam/images/renditions/square/logos/awards/s-skytrax-2024-log.svg"
+                    alt="" style="width: 80px;">
+                <p class="bolk">World's Best Business Class Lounge</p>
+            </div>
+            <div class="col-3 hoj">
+                <img src="https://www.qatarairways.com/content/dam/images/renditions/square/logos/awards/s-skytrax-2024-log.svg"
+                    alt="" style="width: 80px;">
+                <p class="bolk">Best Airline in the Middle East</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <ul class="giu">
+                <li>Cookie policy</li>
+                <li>Legal</li>
+                <li>Privacy</li>
+                <li>Accessibility</li>
+                <li>Combating human trafficking</li>
+                <li>Sitemap</li>
+                <li>Cookie Consent</li>
+            </ul>
+            <p class="for" style="text-align: end;">Websico Airways. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <footer class="d-block d-md-none d-lg-none bg-light mt-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Websico Airways
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>About us</li>
+                            <li>Careers</li>
+                            <li>Press releases</li>
+                            <li>Sponsorship</li>
+                            <li> Qatarisation</li>
+                            <li>Annual reports</li>
+                            <li>Environmental</li>
+                            <li>Sustainablilty</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Group Companies </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Hamad international</li>
+                            <li>Airport</li>
+                            <li>Websico Executive</li>
+                            <li>Websico Duty Free</li>
+                            <li>Websico Airways Cargo</li>
+                            <li>Internal Media Service</li>
+                            <li>Design Organization</li>
+                            <li>Group Companies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Buisness solution
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Corporate Travel</li>
+                            <li>Beyound Buisness</li>
+                            <li>QMICE Meetings and Event</li>
+                            <li>Advertise with us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Customer Support
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Help Center</li>
+                            <li>FAQs</li>
+                            <li>Contact Us</li>
+                            <li>Feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Legal Information
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <li>Terms and Conditions</li>
+                            <li>Cookie Policy</li>
+                            <li>Legal Notice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-4 my-4">
+                <img src="https://www.qatarairways.com/content/dam/images/custom/mdd/footer-iocns/Theqa_logo_SVG.svg"
+                    alt="">
+                <div>
+                    <h5 class="for">Lets stay connected</h5>
+                    <a href="https://www.facebook.com/websicoairways"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/money_ola60708"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/ola-money-892714301/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@OlaMoney-x7s"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/olamoney402/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-5">
+                <div class="mx-2 hoj">
+                    <img src="https://www.qatarairways.com/content/dam/images/renditions/square/logos/awards/s-skytrax-2024-aoty-logo.svg"
+                        alt="" style="width: 80px;">
+                    <p class="bolk">World’s Best Airline</p>
+                </div>
+                <div class="mx-2 hoj">
+                    <img src="https://www.qatarairways.com/content/dam/images/renditions/square/logos/awards/s-skytrax-2024-log.svg"
+                        alt="" style="width: 80px;">
+                    <p class="bolk">World's Best Business Class</p>
+                </div>
+                <div class=" mx-2 hoj">
+                    <img src="https://www.qatarairways.com/content/dam/images/renditions/square/logos/awards/s-skytrax-2024-log.svg"
+                        alt="" style="width: 80px;">
+                    <p class="bolk">World's Best Business Class Lounge</p>
+                </div>
+                <div class="mx-2 hoj">
+                    <img src="https://www.qatarairways.com/content/dam/images/renditions/square/logos/awards/s-skytrax-2024-log.svg"
+                        alt="" style="width: 80px;">
+                    <p class="bolk">Best Airline in the Middle East</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <ul>
+                    <li>Cookie policy</li>
+                    <li>Legal</li>
+                    <li>Privacy</li>
+                    <li>Accessibility</li>
+                    <li>Combating human trafficking</li>
+                    <li>Sitemap</li>
+                    <li>Cookie Consent</li>
+                </ul>
+                <p class="for" id="btn" style="text-align: end;">Websico Airways. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+    <script src="translate.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
