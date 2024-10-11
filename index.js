@@ -15,54 +15,6 @@ window.addEventListener("load", () => {
 //pre loader ends
 
 
-  // Disable right-click
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
-
-  // Disable common key shortcuts for inspecting the page
-  document.onkeydown = function(e) {
-    if (
-      e.keyCode == 123 || // F12
-      (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) || // Ctrl+Shift+I
-      (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) || // Ctrl+U
-      (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) || // Ctrl+Shift+C
-      (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) // Ctrl+Shift+J
-    ) {
-      return false;
-    }
-  };
-
-  (function() {
-    var element = new Image();
-    Object.defineProperty(element, 'id', {
-      get: function() {
-        alert('Developer tools are open. Please close them!');
-        window.location = 'about:blank'; // Optionally redirect the user
-      }
-    });
-    console.log(element);
-  })();
-
-  var _0x1a2b = ['log', 'Developer tools are open. Please close them!'];
-  (function() {
-    var _0x3c4d = new Image();
-    Object['defineProperty'](_0x3c4d, 'id', {
-      get: function() {
-        alert(_0x1a2b[1]);
-        window['location'] = 'about:blank';
-      }
-    });
-    console[_0x1a2b[0]](_0x3c4d);
-  })();
-
-  window.addEventListener('devtoolschange', function(e) {
-    if (e.detail.open) {
-      alert('Inspecting the page is disabled!');
-      window.location = 'about:blank'; // Redirects user to a blank page
-    }
-  });
-
 
 const countElement = document.getElementById('count');
 const plusButton = document.getElementById('plus');
