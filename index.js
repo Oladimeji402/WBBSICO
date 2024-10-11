@@ -118,10 +118,17 @@ $(document).ready(function() {
 //       switchToSignUpBtn.style.display = 'none'; // Hide the switch button after switching to sign up
 //   });
 // });
-
-
 // Array to store user credentials
 let users = JSON.parse(localStorage.getItem('users')) || [];
+
+// Function to validate password complexity
+function isValidPassword(password) {
+    const hasUpperCase = /[A-Z]/.test(password);
+    const hasLowerCase = /[a-z]/.test(password);
+    const hasNumber = /\d/.test(password);
+    const isLongEnough = password.length >= 6; // Check if length is at least 6
+    return hasUpperCase && hasLowerCase && hasNumber && isLongEnough;
+}
 
 // Function to handle sign-up
 document.getElementById('signupForm').addEventListener('submit', function(event) {
@@ -138,17 +145,26 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         return; // Early return for invalid input
     }
 
-    // Check if the username, email, or password is already taken
-    const userExists = users.some(user => user.username === signupUsername || user.email === email || user.password === signupPassword);
+    // Check password complexity
+    if (!isValidPassword(signupPassword)) {
+        alert('Password must be at least 6 characters long and contain at least one uppercase letter, one lowercase letter, and one number.');
+        return; // Early return for invalid password
+    }
+
+    // Check if the username or email is already taken
+    const userExists = users.some(user => user.username === signupUsername || user.email === email);
 
     if (userExists) {
-        alert('Username, email, or password already exists. Please choose another.');
+        alert('Username or email already exists. Please choose another.');
     } else {
+        // Encrypt the password before storing it
+        const encryptedPassword = CryptoJS.AES.encrypt(signupPassword, 'yourSecretKey').toString();
+
         // Store the credentials in the users array
         const user = {
             username: signupUsername,
             email: email,
-            password: signupPassword
+            password: encryptedPassword // Store encrypted password
         };
         users.push(user);
 
@@ -179,59 +195,33 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         alert('Invalid input! Please enter username and password.');
     } else {
         // Check if the credentials exist in the users array
-        const user = users.find(user => user.username === loginUsername && user.password === loginPassword);
+        const user = users.find(user => user.username === loginUsername);
 
         if (user) {
-            alert('Login successful!');
-            document.getElementById('Sulaimon').innerHTML = 'Welcome, ' + loginUsername + '!';
+            // Decrypt the stored password for comparison
+            const decryptedPassword = CryptoJS.AES.decrypt(user.password, 'yourSecretKey').toString(CryptoJS.enc.Utf8);
 
-            // Hide the login/signup button
-            document.querySelector('.gay-hover').style.display = 'none';
+            if (decryptedPassword === loginPassword) {
+                alert('Login successful!');
+                document.getElementById('Sulaimon').innerHTML = 'Welcome, ' + loginUsername + '!';
 
-            // Display the contact icon with logout button
-            const contactIcon = document.createElement('div');
-            contactIcon.style.position = 'relative';
+                // Hide the login/signup button
+                document.querySelector('.gay-hover').style.display = 'none';
 
-            const userIcon = document.createElement('i');
-            userIcon.className = 'fa-solid fa-user';
-            userIcon.style.color = '#fff';
-            userIcon.style.cursor = 'pointer';
-            userIcon.style.marginTop = '0.5cm';
+                // Show the contact icon and logout button
+                document.getElementById('contactIcon').style.display = 'flex'; // Display the contact icon
 
-            const logoutButton = document.createElement('button');
-            logoutButton.innerText = 'Logout';
-            logoutButton.className = 'logout-button'; // Apply the custom class
-            logoutButton.style.display = 'block'; // Show logout button
-            logoutButton.style.marginLeft = '10px';
+                // Add event listener for the logout button
+                document.getElementById('logoutButton').onclick = logout;
 
-            // Add styles for logout button
-            logoutButton.style.backgroundColor = '#8e2157';  // Custom background color
-            logoutButton.style.color = 'white';                // Text color
-            logoutButton.style.border = 'none';                // Remove border
-            logoutButton.style.padding = '10px 15px';          // Add padding
-            logoutButton.style.borderRadius = '5px';          // Rounded corners
-            logoutButton.style.cursor = 'pointer';             // Pointer cursor on hover
-            logoutButton.style.fontSize = '14px';             // Font size
-            logoutButton.style.transition = 'background-color 0.3s ease'; // Smooth transition
-
-            // Hover effect for logout button
-            logoutButton.onmouseenter = () => {
-                logoutButton.style.backgroundColor = '#6c1c45'; // Darker shade for hover effect
-            };
-            logoutButton.onmouseleave = () => {
-                logoutButton.style.backgroundColor = '#8e2157'; // Original color
-            };
-
-            logoutButton.addEventListener('click', logout);
-
-            contactIcon.appendChild(userIcon);
-            contactIcon.appendChild(logoutButton);
-            document.querySelector('.navbar-nav').appendChild(contactIcon);
-
-            // Show logout button when user icon is clicked
-            userIcon.addEventListener('click', function() {
-                logoutButton.style.display = logoutButton.style.display === 'none' ? 'block' : 'none';
-            });
+                // Show logout button when user icon is clicked
+                document.getElementById('userIcon').addEventListener('click', function() {
+                    const logoutButton = document.getElementById('logoutButton');
+                    logoutButton.style.display = logoutButton.style.display === 'none' ? 'block' : 'none';
+                });
+            } else {
+                alert('Invalid username or password.');
+            }
         } else {
             alert('Invalid username or password.');
         }
@@ -263,25 +253,16 @@ function switchToLogin() {
     document.getElementById('signupForm').style.display = 'none';
 }
 
-// Function to handle logout
+// Logout function
 function logout() {
-    // Clear the user info display
     document.getElementById('Sulaimon').innerHTML = 'Welcome!';
+    document.querySelector('.gay-hover').style.display = 'block'; 
 
-    // Show the login/signup button again
-    document.querySelector('.gay-hover').style.display = 'block'; // Show login/signup button
+    // Hide the contact icon and logout button
+    document.getElementById('contactIcon').style.display = 'none'; 
 
-    // Remove the user icon and logout button
-    const contactIcon = document.querySelector('.navbar-nav div');
-    if (contactIcon) {
-        contactIcon.remove(); // Remove the contact icon and logout button from the DOM
-    }
-
-    // Clear the user data from local storage
-    localStorage.setItem('users', JSON.stringify(users.filter(user => user.username !== document.getElementById('username').value.trim())));
     console.log('Logged out');
 }
-
 
 
 

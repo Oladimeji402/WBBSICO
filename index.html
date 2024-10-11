@@ -129,7 +129,18 @@
                                         style="color: #fff;"></i></span> Login / Sign
                                 Up</button>
                         </li>
+                        <!-- User Icon and Logout Button -->
+                        <div id="contactIcon" style="position: relative; display: none;">
+                            <i id="userIcon" class="fa-solid fa-user"
+                                style="color: #fff; cursor: pointer; margin-top: 0.5cm;"></i>
+                            <button id="logoutButton" class="logout-button"
+                                style="display: block; margin-left: 10px; background-color: #8e2157; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 14px; transition: background-color 0.3s ease;">
+                                Logout
+                            </button>
+                        </div>
+
                     </ul>
+
                 </div>
             </div>
         </nav>
@@ -1215,6 +1226,7 @@
 
     <script src="index.js"></script>
     <script src="translate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
