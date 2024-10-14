@@ -33,9 +33,118 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link active hover-underline" aria-current="page" href="#">Explore</a>
+
+                        </li> -->
+                        <li class="nav-item dropdown dropdown-start d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle active hover-underline" href="#" id="exploreDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu mega-menu centered-dropdown border-0"
+                                aria-labelledby="exploreDropdown" style="background-color: #fff; color: #1AA3F7;">
+                                <div class="container">
+                                    <div class="col-12 text-end">
+                                        <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="dropdown"></button>
+                                    </div>
+                                    <div class="row">
+                                        <!-- Our Destination Column -->
+                                        <div class="col-3 who">
+                                            <h5>Our Destination</h5>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <img src="https://flagcdn.com/w40/eu.png" alt="Europe Flag" width="24px" height="24px">
+                                                    <a href="#">Europe</a>
+                                                </li>
+                                                <li>
+                                                    <img src="https://flagcdn.com/w40/af.png" alt="Africa Flag" width="24px" height="24px">
+                                                    <a href="#">Africa</a>
+                                                </li>
+                                                <li>
+                                                    <img src="https://flagcdn.com/w40/as.png" alt="Asia Flag" width="24px" height="24px">
+                                                    <a href="#">Asia</a>
+                                                </li>
+                                                <li>
+                                                    <img src="https://flagcdn.com/w40/na.png" alt="North America Flag" width="24px" height="24px">
+                                                    <a href="#">North America</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                        
+                                        <!-- Trending Section -->
+                                        <div class="col-3">
+                                            <h5>Trending</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img id="trendingImage" src="https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/ghana/accra/v-accra-ghana.jpg"
+                                                         alt="Trending Destination" class="img-fluid" style="height: 200px;">
+                                                </div>
+                                                <div class="col-6">
+                                                    <ul class="list-unstyled">
+                                                        <li onmouseover="changeImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/ghana/accra/v-accra-ghana.jpg')">
+                                                            <a href="#">Accra</a>
+                                                        </li>
+                                                        <li onmouseover="changeImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/united-kingdom/birmingham/v-birmingham-culture-primary.jpg')">
+                                                            <a href="#">Birmingham</a>
+                                                        </li>
+                                                        <li onmouseover="changeImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/nigeria/abuja/v-abuja.jpg')">
+                                                            <a href="#">Abuja</a>
+                                                        </li>
+                                                        <li onmouseover="changeImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/united-arab-emirates/dubai/v-dubai-burj-khalifa.jpg')">
+                                                            <a href="#">Dubai</a>
+                                                        </li>
+                                                        <li onmouseover="changeImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/ireland/dublin/v-dublin.jpg')">
+                                                            <a href="#">Dublin</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- New Destination Section -->
+                                        <div class="col-3">
+                                            <h5>New Destination</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img id="newDestImage" src="https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/saudi-arabia/al-ula/v-al-ula-saudi.jpg"
+                                                         alt="New Destination" class="img-fluid" style="height: 200px;">
+                                                </div>
+                                                <div class="col-6">
+                                                    <ul class="list-unstyled">
+                                                        <li onmouseover="changeNewDestImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/saudi-arabia/al-ula/v-al-ula-saudi.jpg')">
+                                                            <a href="#">AIUIa</a>
+                                                        </li>
+                                                        <li onmouseover="changeNewDestImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/cambodia/phnom-penh-/v-phnompenh-culture.jpg')">
+                                                            <a href="#">Phnom Penh</a>
+                                                        </li>
+                                                        <li onmouseover="changeNewDestImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/japan/tokyo/v-tokyo-primary.jpg')">
+                                                            <a href="#">Tokyo (Haneda)</a>
+                                                        </li>
+                                                        <li onmouseover="changeNewDestImage('https://www.qatarairways.com/content/dam/images/renditions/vertical/destinations/france/lyon/v-lake-lyon-france.jpg')">
+                                                            <a href="#">Lyon</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Visit Websico Section -->
+                                        <div class="col-2">
+                                            <h5>Visit Websico</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Websico Stopover</a></li>
+                                                <li><a href="#">Experience Websico</a></li>
+                                                <li><a href="#">Tours & Activities</a></li>
+                                                <li><a href="#">Transit Tours</a></li>
+                                                <li><a href="#">Discover Qatar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
                         </li>
+                        
                         <li class="nav-item dropdown dropdown-start d-none d-lg-block">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">

@@ -367,4 +367,12 @@ function bookFlight() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
   }
    
+
+  function changeImage(imageUrl) {
+      document.getElementById('trendingImage').src = imageUrl;
+  }
+  function changeNewDestImage(imageUrl) {
+      document.getElementById('newDestImage').src = imageUrl;
+  }
+
   
