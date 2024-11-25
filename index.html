@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSICO AIRWAYS</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,18 +15,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <div class="loader"></div>
+      <div id="preloader">
+        <h1 id="preloader-text">
+          <span class="letter">L</span>
+          <span class="letter">o</span>
+          <span class="letter">a</span>
+          <span class="letter">d</span>
+          <span class="letter">i</span>
+          <span class="letter">n</span>
+          <span class="letter">g</span>
+          <span class="letter">.</span>
+          <span class="letter">.</span>
+          <span class="letter">.</span>
+        </h1>
+      </div>
 
     <!-- header start  -->
     <section class="page">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">WEBSICO AIRWAYS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"1
+                    data-bs-target="#navbarSupportedContent" aria-controls="nav barSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -52,10 +63,10 @@
                                         <!-- Our Destination Column -->
                                         <div class="col-3 who">
                                             <h5>Our Destination</h5>
-                                            <ul class="list-unstyled">
+                                            <ul class="list-unstyled who">
                                                 <li>
                                                     <img src="https://flagcdn.com/w40/eu.png" alt="Europe Flag" width="24px" height="24px">
-                                                    <a href="#">Europe</a>
+                                                    <a href="/countries/europe.html">Europe</a>
                                                 </li>
                                                 <li>
                                                     <img src="https://flagcdn.com/w40/af.png" alt="Africa Flag" width="24px" height="24px">
@@ -771,8 +782,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5" style="justify-content: space-between">
-                <div class="col-lg-4 col-md-12">
+            <div class="row mt-5 destinations" style="justify-content: space-between">
+                <div class="col-lg-4 col-md-12 destinations">
                     <div class="image-container">
                         <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-2/destinations/united-kingdom/london/h2-gatwick-phone.jpg/jcr:content/renditions/rendition.733.425.jpg"
                             alt="London Heathrow" style="height: 360px;">
@@ -795,7 +806,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 destinations">
                             <div class="imaged">
                                 <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/china/guangzhou/s-guangzhou-outdoor.jpg/jcr:content/renditions/rendition.360.360.jpg"
                                     alt="London Heathrow">
@@ -808,7 +819,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 destinations">
                             <div class="imaged">
                                 <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/united-states/new-york/s-new-york-city4.jpg/jcr:content/renditions/rendition.360.360.jpg"
                                     alt="London Heathrow">
@@ -823,8 +834,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-7 col-md-12">
+                <div class="row destinations">
+                    <div class="col-lg-7 col-md-12 destinations">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="imaged">
@@ -839,7 +850,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 destinations">
                                 <div class="imaged">
                                     <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/united-states/dallas/s-dallas-city.jpg/jcr:content/renditions/rendition.360.360.jpg"
                                         alt="London Heathrow">
@@ -855,7 +866,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-5 col-md-12">
+                    <div class="col-lg-5 col-md-12 destinations">
                         <div class="image-container">
                             <img src="https://www.southernliving.com/thmb/2xIANjcN_LmnK5EDBedskp4XjOg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-546439338-72d28676e5704c439802ab6f971c4b3c.jpg"
                                 alt="London Heathrow" style="height: 365px;">
@@ -878,8 +889,8 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-5 col-md-12">
+                <div class="row destinations">
+                    <div class="col-lg-5 col-md-12 destinations">
                         <div class="image-container">
                             <img src="https://www.qatarairways.com/content/dam/images/renditions/horizontal-2/destinations/qatar/doha/h2-mia-doha.jpg/jcr:content/renditions/rendition.733.425.jpg"
                                 alt="London Heathrow" style="height: 365px;">
@@ -901,8 +912,8 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="row destinations">
+                            <div class="col-md-6 destinations">
                                 <div class="imaged">
                                     <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/france/paris-/s-paris.jpg/jcr:content/renditions/rendition.360.360.jpg"
                                         alt="London Heathrow">
@@ -915,8 +926,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="imaged">
+                            <div class="col-md-6 destinations">
+                                <div class="imaged destinations">
                                     <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/saudi-arabia/jeddah/s-jeddah-coastal-masjid.jpg/jcr:content/renditions/rendition.360.360.jpg"
                                         alt="London Heathrow">
                                     <div class="image-overlay"></div>
@@ -1333,7 +1344,7 @@
 
 
 
-    <script src="index.js"></script>
+    <script src="script1.js"></script>
     <script src="translate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
     <script type="text/javascript"

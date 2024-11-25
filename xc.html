@@ -1,0 +1,73 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Image Hover Effect</title>  
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .container {
+  display: flex;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  flex: 1;
+}
+
+.large {
+  flex: 2;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container .image-container:not(.large) {
+  display: flex;
+  flex-direction: column;
+}
+
+.hover-image {
+  transition: transform 0.3s;
+}
+
+.hover-image:hover {
+  transform: scale(1.05);
+}
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  text-align: center;
+}
+
+    </style>
+ 
+</head>  
+<body>  
+    <div class="container">
+        <div class="image-container">
+          <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/saudi-arabia/jeddah/s-jeddah-coastal-masjid.jpg/jcr:content/renditions/rendition.360.360.jpg" alt="Image 1" class="hover-image">
+          <div class="hover-content">Your Content Here</div>
+        </div>
+        <div class="image-container">
+          <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/saudi-arabia/jeddah/s-jeddah-coastal-masjid.jpg/jcr:content/renditions/rendition.360.360.jpg" alt="Image 2" class="hover-image">
+          <div class="hover-content">Your Content Here</div>
+        </div>
+        <div class="image-container large">
+          <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/saudi-arabia/jeddah/s-jeddah-coastal-masjid.jpg/jcr:content/renditions/rendition.360.360.jpg" alt="Image 3" class="hover-image">
+          <div class="hover-content">Your Content Here</div>
+        </div>
+      </div>      
+</body>  
+</html>

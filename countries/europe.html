@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            list-style-type: none;
+            text-decoration: none;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            color: #8e2157;
+        }
+
+        a,
+        .a {
+            color: #8e2157;
+            text-decoration: none;
+        }
+
+        /* Video styling */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Full viewport height */
+            overflow: hidden;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .content-overlay {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        .video-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        /* SVG wave styling */
+        .wave-overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 128px;
+            z-index: 1;
+        }
+
+        h2 {
+            font-weight: 100;
+        }
+
+        a:hover {
+            color: #8e2157;
+            text-decoration: underline;
+        }
+    .image-container {  
+    position: relative;  
+    width: 100%;  /* Set the width of the image */  
+    height: 500px;
+    overflow: hidden;  /* Hide the overflow of the content */  
+}  
+
+.hover-image {  
+    width: 100%; /* Make the image responsive */  
+    display: block;  
+}  
+
+.hover-content {  
+    position: absolute;  
+    bottom: 0; /* Start from the bottom of the container */  
+    left: 0;  
+    right: 0;  
+    background-color: rgba(142, 33, 87, 0.4); /* 0.8 for 80% opacity */
+    /* opacity: 0.2; */
+    color: white;  
+    text-align: center;  
+    padding: 10px;  
+    transform: translateY(100%); /* Initially hide it by moving it down */  
+    transition: transform 0.3s ease; /* Smooth transition */  
+}  
+
+/* Show the content on hover */  
+.image-container:hover .hover-content {  
+    transform: translateY(0); /* Slide up to visible */  
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="video-container">
+            <video autoplay loop muted playsinline class="background-video">
+                <source src="/americas.mp4" type="video/mp4" />
+            </video>
+            <div class="content-overlay">
+                <h1 class="mt-5 ms-5 text-light">The Americans</h1>
+            </div>
+
+            <!-- SVG Wave Overlay -->
+            <div class="wave-overlay">
+                <svg width="100%" height="128" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 128" xml:space="preserve">
+                    <path opacity="0.2" fill="#e7e7e7" d="M1999.5,22.2c-346-0.6-524.6-4.7-878.8,4.4c-286.6,7.4-442.3,54-608.1,51.2
+                    C307.3,74.3,202.5,5-0.5,28.1v100.4l2000-0.5V22.2z"></path>
+                    <path opacity="0.2" fill="#e7e7e7"
+                        d="M-0.3,46.1C251,15.3,440.9,84.7,499.6,98.4c54.7,12.8,122.5,12,186.7-5.3
+                    c154.2-41.6,315.5-70.9,475.2-67.5s324.6,22.4,484.3,19.7c133-2.3,302.8,1.7,352.8,3.7c0,21.3,0,80,0,80H-0.5L-0.3,46.1z"></path>
+                    <path opacity="0.4" fill="#e7e7e7" d="M2000,41.2c-139.8-12.7-219.9-10.8-360.2-11.2c-285.5-0.8-487.5,18-736.2,51.1
+                    C647,115.4,546.7,116.4,199.2,53.6C140.3,43,59.5,45.6-0.5,52.3V130h2000L2000,41.2z"></path>
+                    <path fill="#e7e7e7"
+                        d="M1634.6,50.1c-193.8,11.9-366.9,24.9-569,50c-110.2,13.7-221.2,21.5-332.3,19.6
+                    c-187-3.3-344.5-29.7-560.9-69.8c-122.2-22.6-172.8-4-172.8-4V130h1998V46C1997.5,46,1831,38.1,1634.6,50.1z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div>
+                <p class="a">
+                    <a href="#">Home</a>>
+                    <a href="#">Discover</a>>
+                    <strong> The Americans</strong>
+                </p>
+            </div>
+            <div>
+                <h2>A cultural tapestry like no other</h2>
+                <p>From the imposing Big Apple to the razzmatazz of Rio de Janeiro, the American nations span a more
+                    eclectic cultural spectrum than any other region on Earth.</p>
+            </div>
+            <div class="mt-5">
+                <h1>Destinations in the Americas</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="image-container">  
+                            <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/saudi-arabia/jeddah/s-jeddah-coastal-masjid.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                            alt="London Heathrow"  class="hover-image">
+                            <div class="hover-content">
+                            <p>Te</p>
+                            </div>  
+                        </div>  
+                        <div class="image-container">  
+                            <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/saudi-arabia/jeddah/s-jeddah-coastal-masjid.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                            alt="London Heathrow"  class="hover-image">
+                            <div class="hover-content">
+                            <p>Te</p>
+                            </div>  
+                        </div>  
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-container">  
+                            <img src="https://www.qatarairways.com/content/dam/images/renditions/square/destinations/saudi-arabia/jeddah/s-jeddah-coastal-masjid.jpg/jcr:content/renditions/rendition.360.360.jpg"
+                            alt="London Heathrow"  class="hover-image">
+                            <div class="hover-content"></div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
